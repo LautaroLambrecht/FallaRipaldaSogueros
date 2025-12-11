@@ -3,12 +3,16 @@ body{
 }
 
 img{
-    width: 65px;
-    height: 104.5px;
+    width: 125px;
+    height: 120px;
 }
 
 h1{
     font-size: 39px;
+}
+
+main > h1{
+    font-size: 20px;
 }
 
 header{
@@ -52,6 +56,16 @@ form > button{
     flex-direction: row;
 }
 
+input{
+    text-align: center;
+    border-radius: 7px;
+}
+
+tr, td, th{
+    border: 2px solid black;
+    text-align: center;
+}
+
 @media screen and (min-width: 1024px) {
     body {
         max-width: 1200px;
@@ -59,8 +73,8 @@ form > button{
     }
 
     img {
-        width: 80px;
-        height: 128px;
+        width: 125px;
+        height: 120px;
     }
 
     h1 {
@@ -111,11 +125,12 @@ form > button{
 
 @media (min-width: 768px) and (max-width: 1023px){
     h1{
-        font-size: 40px;
+        font-size: 37px;
     }
 
     img{
-        width: 70px;
+        width: 125px;
+        height: 120px;
     }
 
     header{
@@ -166,7 +181,8 @@ form > button{
     }
 
     img{
-        width: 60px;
+        width: 125px;
+        height: 120px;
     }
 
     header{
@@ -198,6 +214,7 @@ form > button{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        font-size: 12px;
     }
 
     footer {
