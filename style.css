@@ -163,6 +163,10 @@ tr, td, th{
   background-color: #f0f0f0;
 }
 
+.mainNews{
+    height: auto;
+}
+
 @media screen and (min-width: 1024px) {
     body {
         max-width: 1200px;
@@ -197,11 +201,13 @@ tr, td, th{
         justify-content: center;
         border-bottom: 5px black solid;
         margin-bottom: 20px;
+        margin-top: 20px;
+        height: 430px;
     }
 
     .loginForm {
-        margin: 0 auto;
-        height: 120px;
+        margin: 10px auto 10px auto;
+        align-items: center;
     }
 
     .loginForm > input{
@@ -253,7 +259,6 @@ tr, td, th{
         flex-direction: column;
         justify-content: center;
         border-bottom: 5px black solid;
-        height: 750px;
     }
     
     main > h1 {
