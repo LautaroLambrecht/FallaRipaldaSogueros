@@ -1,8 +1,22 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #f0b23d 0%,
+        #d6471e 20%,
+        #c40000 50%,
+        #9b1e3f 75%,
+        #5c4a92 100%
+    );
+    height: 500%;
+    width: 100%;
 }
 
-img{
+footer{
+    background: transparent;
+}
+
+.logo{
     width: 125px;
     height: 120px;
 }
@@ -27,7 +41,6 @@ main{
     flex-direction: column;
     justify-content: center;
     border-bottom: 5px black solid;
-    height: 500px;
 }
 
 form{
@@ -50,20 +63,104 @@ footer{
     display: flex;
 }
 
-form > button{
+.loginForm > button{
     margin: 0 auto;
     display: flex;
     flex-direction: row;
 }
 
-input{
+.loginForm input{
     text-align: center;
     border-radius: 7px;
+    background: transparent;
+}
+
+.container select{
+    background: transparent;
+}
+
+input::placeholder, select::placeholder{
+    color: #000;
 }
 
 tr, td, th{
     border: 2px solid black;
     text-align: center;
+}
+
+.container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 0px auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.container > select {
+  border-radius: 6px;
+  border: 1px solid #000;
+}
+
+.welcomeUser{
+    margin-top: 20px;
+}
+
+.containerNews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 20px auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.containerNews > img{
+    width: 640px;
+}
+
+.containerNews > p{
+    width: 640px;
+}
+
+#calendar-container {
+  width: 665px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background-color: #fff;
+  margin: 0 auto;
+ }
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+#calendar div {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.day-name {
+  font-weight: bold;
+}
+
+.day {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.day:hover {
+  background-color: #f0f0f0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -72,13 +169,13 @@ tr, td, th{
         margin: 0 auto;
     }
 
-    img {
+    .logo {
         width: 125px;
         height: 120px;
     }
 
     h1 {
-        font-size: 48px;
+        font-size: 35px;
     }
 
     header {
@@ -88,21 +185,27 @@ tr, td, th{
         border-bottom: 5px black solid;
     }
 
+    .searcher{
+        margin-top: 30px;
+        background: transparent;
+        border-radius: 5px;
+    }
+
     main {
         display: flex;
         flex-direction: column;
         justify-content: center;
         border-bottom: 5px black solid;
-        height: 450px;
+        margin-bottom: 20px;
     }
 
-    form {
+    .loginForm {
         margin: 0 auto;
+        height: 120px;
     }
 
-    main > h1 {
-        margin: 0 auto;
-        font-size: 42px;
+    .loginForm > input{
+        margin: 10px 0 10px 0;
     }
 
     footer > a {
@@ -120,6 +223,11 @@ tr, td, th{
         margin: 0 auto;
         display: flex;
         flex-direction: row;
+        background: transparent;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+
     }
 }
 
@@ -128,7 +236,7 @@ tr, td, th{
         font-size: 37px;
     }
 
-    img{
+    .logo{
         width: 125px;
         height: 120px;
     }
@@ -180,7 +288,7 @@ tr, td, th{
         font-size: 40px;
     }
 
-    img{
+    .logo{
         width: 125px;
         height: 120px;
     }

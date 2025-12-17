@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Inicio de sesion</title>
+</head>
+<body>
+    <header>
+        <h1>Falla Ripalda Sogueros</h1>
+        <img class="logo" src="../img/color.jpeg" alt="">
+    </header>
+    <main>
+        <h1 class="welcomeUser">Bienvenido *usuario*</h1>
+        <br>
+        <br>
+        <div class="containerNews">
+            <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-souvenirpixels-417074.jpg&fm=jpg" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum voluptate veniam autem aut, incidunt dolor animi quasi, maiores quaerat commodi minus deleniti quo impedit nesciunt! Officiis ratione rem minus amet!</p>
+        </div>
+        <div id="calendar-container">
+            <div id="calendar"></div>
+        </div>
+        <br><br>
+    </main>
+    <footer>
+        <a href="#">Informacion de contacto</a>
+        <a href="">Politica de privacidad</a>
+        <a href="pages/paginaInicio.html">Inicio</a>
+    </footer>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const calendarElement = document.getElementById('calendar');
+    const currentDate = new Date();
+    const currentYear = currentDate.getFullYear();
+    const currentMonth = currentDate.getMonth();
+    
+    const firstDay = new Date(currentYear, currentMonth, 1).getDay();
+    
+    const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+
+    const daysOfWeek = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
+    
+    daysOfWeek.forEach(day => {
+        const dayNameElement = document.createElement('div');
+        dayNameElement.textContent = day;
+        dayNameElement.classList.add('day-name');
+        calendarElement.appendChild(dayNameElement);
+    });
+    
+    for (let i = 0; i < firstDay; i++) {
+        const blankDay = document.createElement('div');
+        calendarElement.appendChild(blankDay);
+    }
+
+    for (let day = 1; day <= daysInMonth; day++) {
+        const dayElement = document.createElement('div');
+        dayElement.textContent = day;
+        dayElement.classList.add('day');
+        calendarElement.appendChild(dayElement);
+    }
+    });
+
+  </script>
+</body>
+</html>
