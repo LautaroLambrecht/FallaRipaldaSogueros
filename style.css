@@ -8,8 +8,7 @@ body{
         #9b1e3f 75%,
         #5c4a92 100%
     );
-    height: 500%;
-    width: 100%;
+    height: 100vh;
 }
 
 footer{
@@ -203,6 +202,12 @@ tr, td, th{
         margin-bottom: 20px;
         margin-top: 20px;
         height: 430px;
+        background-color: white;
+        background-image: url(img/color.jpeg);
+        background-size: cover;
+        background-size: 360px;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .loginForm {
@@ -238,58 +243,48 @@ tr, td, th{
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
-    h1{
-        font-size: 37px;
+    .searcher{
+        margin-top: 30px;
+        background: transparent;
+        border-radius: 5px;
+        font-size: 20px;
+
     }
 
-    .logo{
-        width: 125px;
-        height: 120px;
-    }
-
-    header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border-bottom: 5px black solid;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border-bottom: 5px black solid;
+    .loginForm > input, .loginForm > button{
+        font-size: 25px;
+        margin: 10px auto 10px auto;
     }
     
-    main > h1 {
-        margin: 0 auto;
-        font-size: 42px;
-    }
-
-    form{
-        margin: 0 auto;
-    }
-    
-    footer > a {
-        margin: 20px auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    footer {
-        display: flex;
-    }
-
-    form > button {
+    .loginForm > button{
         margin: 0 auto;
         display: flex;
         flex-direction: row;
+        background: transparent;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+
+    .container{
+        font-size: 24px;
+    }
+
+    main{
+        min-height: 80vh;
+    }
+
+    footer{
+        font-size: 20px;
     }
 }
 
-@media (min-width: 576px) and (max-width: 767px){
-    h1{
+/* @media (min-width: 576px) and (max-width: 767px){ */
+    /* body{
+        height: 100%;
+        width: 100%;
+    } */
+    /* h1{
         font-size: 40px;
     }
 
@@ -338,5 +333,4 @@ tr, td, th{
         margin: 0 auto;
         display: flex;
         flex-direction: row;
-    }
-}
+    } */

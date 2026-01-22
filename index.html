@@ -3,31 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Inicio de sesion</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <title>Index</title>
 </head>
 <body>
-    <header>
-        <h1>Falla Ripalda Sogueros</h1>
-        <img class="logo" src="img/color.jpeg" alt="">
-    </header>
-    <main>
-        <h1>Bienvenido</h1>
-        <br>
-        <br>
-        <form class="loginForm" action="">
-            <input type="text" placeholder="Usuario">
-            <br>
-            <input type="password" placeholder="Contraseña">
-            <br>
-            <br>
-            <button type="submit">Entrar</button>
-        </form>
-    </main>
-    <footer>
-        <a href="#">Informacion de contacto</a>
-        <a href="">Politica de privacidad</a>
-        <a href="direccionamiento.html">Inicio</a>
-    </footer>
+    <div class="container-fluid">
+        <header class="row jumbotron jumbotron-fluid" style="border-bottom: 5px solid black; background-image: url(./img/Bocetos_Falleras/Refugio-de-Ripalda-1.jpg);
+                        height: 400px; background-repeat: no-repeat; background-size: cover; background-position: center center">
+                <h1 class="col-8">Falla Ripalda Sogueros</h1>
+                <img class="logo col-2" src="../img/color.jpeg" alt="" style="width: 20%;">
+        </header>
+
+        <section class="row">
+            <article class="col-12">
+                <h1 style="text-align: center;">Sobre nosotros</h1>
+            </article>
+        </section>
+    </div>
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
