@@ -91,3 +91,13 @@ li:hover{
     transition: all 2s;
     border: solid #5D5ABB 2px;
 }
+
+.btn{
+    border: solid #5D5ABB 1px;
+    color: #5D5ABB;
+}
+
+.btn:hover{
+    border: solid #E28E52 1px;
+    color: #E28E52;
+}
